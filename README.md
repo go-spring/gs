@@ -14,3 +14,5 @@ gs release tag
 | push      | 将修改推送到 go-spring 子项目    |
 | remove    | 本地移除 go-spring 子项目       |
 | release   | 本地所有子项目发布远程标签        |
+| repair    | 修复远程项目的链接               |
+| backup    | 备份本地项目文件               |
