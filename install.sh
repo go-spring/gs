@@ -37,16 +37,16 @@ fi
 echo "Installing gs ..."
 go install github.com/go-spring/gs@main && echo "gs installed successfully" || { echo "Failed to install gs"; exit 1; }
 
-# install gs-new
-echo "Installing gs-new ..."
-go install github.com/go-spring/gs-new/cmd@latest && echo "gs-new installed successfully" || { echo "Failed to install gs-new"; exit 1; }
-
-# install gs-gen
-echo "Installing gs-gen ..."
-go install github.com/go-spring/gs-gen/cmd@latest && echo "gs-gen installed successfully" || { echo "Failed to install gs-gen"; exit 1; }
+## install gs-new
+#echo "Installing gs-new ..."
+#go install github.com/go-spring/gs-new@latest && echo "gs-new installed successfully" || { echo "Failed to install gs-new"; exit 1; }
+#
+## install gs-gen
+#echo "Installing gs-gen ..."
+#go install github.com/go-spring/gs-gen/cmd@latest && echo "gs-gen installed successfully" || { echo "Failed to install gs-gen"; exit 1; }
 
 # install gs-mock
 echo "Installing gs-mock ..."
-go install github.com/go-spring/gs-mock/cmd@latest && echo "gs-mock installed successfully" || { echo "Failed to install gs-mock"; exit 1; }
+go install github.com/go-spring/gs-mock@main && echo "gs-mock installed successfully" || { echo "Failed to install gs-mock"; exit 1; }
 
 echo "All gs tools installed successfully!"

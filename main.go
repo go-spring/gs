@@ -48,7 +48,7 @@ func main() {
 	}
 
 	// Call the requested tool with provided arguments
-	callTool("gs-"+os.Args[1], os.Args[1:]...)
+	callTool("gs-"+os.Args[1], os.Args[2:]...)
 }
 
 // showHelp displays the help information,
@@ -137,6 +137,7 @@ func callTool(tool string, args ...string) {
 		if len(output) > 0 {
 			fmt.Printf("Output: %s\n", string(output))
 		}
+		os.Exit(1)
 	}
 	fmt.Println(string(output))
 }
