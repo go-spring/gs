@@ -33,6 +33,9 @@ if [[ ":$PATH:" != *":$GOBIN:"* ]]; then
     exit 1
 fi
 
+# Set GOPROXY to direct
+GOPROXY=direct
+
 # install gs
 echo "Installing gs ..."
 go install github.com/go-spring/gs@main && echo "gs installed successfully" || { echo "Failed to install gs"; exit 1; }
