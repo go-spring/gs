@@ -25,7 +25,7 @@ import (
 	"strings"
 )
 
-const Version = "v0.2.1"
+const Version = "v0.2.2"
 
 // execDir is the directory where the executable is located.
 var execDir string
@@ -55,7 +55,12 @@ func main() {
 // including available tools and usage instructions.
 func showHelp() {
 	tools := scanTools()
-	fmt.Printf("Go-Spring Toolkit Manager %s\n", Version)
+	fmt.Printf("Go-Spring Toolkit Manager %s.\n", Version)
+	fmt.Println()
+	fmt.Println("The toolkit manager looks for executable files prefixed with `gs-` in its directory\n" +
+		"(usually `$GOPATH/bin`) and manages them as available tools.\n" +
+		"When a user invokes a tool, the toolkit manager executes the corresponding executable\n" +
+		"and passing the arguments.")
 	fmt.Println()
 	fmt.Println("Available tools:")
 
