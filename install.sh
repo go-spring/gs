@@ -43,10 +43,10 @@ go install github.com/go-spring/gs@main && echo "gs installed successfully" || {
 ## install gs-new
 #echo "Installing gs-new ..."
 #go install github.com/go-spring/gs-new@latest && echo "gs-new installed successfully" || { echo "Failed to install gs-new"; exit 1; }
-#
-## install gs-gen
-#echo "Installing gs-gen ..."
-#go install github.com/go-spring/gs-gen/cmd@latest && echo "gs-gen installed successfully" || { echo "Failed to install gs-gen"; exit 1; }
+
+# install gs-gen
+echo "Installing gs-gen ..."
+go install github.com/go-spring/gs-gen@main && echo "gs-gen installed successfully" || { echo "Failed to install gs-gen"; exit 1; }
 
 # install gs-mock
 echo "Installing gs-mock ..."
