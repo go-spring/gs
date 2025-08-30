@@ -40,9 +40,9 @@ GOPROXY=direct
 echo "Installing gs ..."
 go install github.com/go-spring/gs@main && echo "gs installed successfully" || { echo "Failed to install gs"; exit 1; }
 
-## install gs-new
-#echo "Installing gs-new ..."
-#go install github.com/go-spring/gs-new@latest && echo "gs-new installed successfully" || { echo "Failed to install gs-new"; exit 1; }
+# install gs-init
+echo "Installing gs-init ..."
+go install github.com/go-spring/gs-init@latest && echo "gs-init installed successfully" || { echo "Failed to install gs-init"; exit 1; }
 
 # install gs-gen
 echo "Installing gs-gen ..."
