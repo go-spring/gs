@@ -13,7 +13,7 @@ Go-Spring Tools Manager (gs) is a command-line program for managing and using va
 This script will automatically install the following tools:
 
 - `gs`: the tool manager itself
-- `gs-new`: creates new Go-Spring projects
+- `gs-init`: creates new Go-Spring projects
 - `gs-gen`: generates code from idl files
 - `gs-mock`: generates mock code based on configuration
 
@@ -41,9 +41,9 @@ gs <tool> [args]
 
 For example:
 
-- Create a new project: `gs new myproject`
-- Generate idl code: `gs gen`
-- Generate mock code: `gs mock`
+- Create a new project: `gs init ...`
+- Generate idl code: `gs gen ...`
+- Generate mock code: `gs mock ...`
 
 ### View Tool Help
 

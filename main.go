@@ -25,7 +25,7 @@ import (
 	"strings"
 )
 
-const Version = "v0.2.3"
+const Version = "v0.2.4"
 
 // execDir is the directory where the executable is located.
 var execDir string
